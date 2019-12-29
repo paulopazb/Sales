@@ -4,7 +4,7 @@ namespace Sales.Common.Models
 {
     using System;
     using System.ComponentModel.DataAnnotations;
-    class Product
+    public class Product
     {   [Key]
         public int ProductId{ get; set; }
         [Required]
