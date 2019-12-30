@@ -5,11 +5,12 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              xmlns:inter="clr-namespace:Sales.Interfaces" 
+             BindingContext="{Binding Main,Source={StaticResource Locator}}"
              x:Class="Sales.App">
     <Application.Resources>
 
         <ResourceDictionary>
-            
+  
             <!--Locator-->
             <inter:InstanceLocator x:Key="Locator"/>
         </ResourceDictionary>
