@@ -8,6 +8,7 @@ namespace Sales.ViewModels
     using System.Windows.Input;
     using GalaSoft.MvvmLight.Command;
     using Sales.Common.Models;
+    using Sales.Helpers;
     using Sales.Services;
     using Xamarin.Forms;
 
@@ -43,7 +44,7 @@ namespace Sales.ViewModels
                 await Application.Current.MainPage.DisplayAlert("Error", connection.Message, "Accept");
                 return;
             }
-            var response = await this.apiService.GetList<Product>("https://salesapiservice.azurewebsites.net", "/api", "/Products");
+            var response = await this.apiService.GetList<Product>("https://salesapiservice.azurewebsites.net", "/api", "/Products",Settings.TokenType,Settings.AccessToken);
             if (!response.IsSuccess)
             {
              
