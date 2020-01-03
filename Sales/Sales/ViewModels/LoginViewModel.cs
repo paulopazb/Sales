@@ -81,7 +81,7 @@ namespace Sales.ViewModels
                 await Application.Current.MainPage.DisplayAlert("Error ",connection.Message, " Accept");
                 return;
             }
-            var token = await this.apiService.GetToken("https://salesapiservice.azurewebsites.net/",this.Email,this.Password);
+            var token = await this.apiService.GetToken("https://salesapi2020.azurewebsites.net", this.Email,this.Password);
           
             if (token == null)
             {

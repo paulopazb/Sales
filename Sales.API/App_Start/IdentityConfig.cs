@@ -28,8 +28,8 @@ namespace Sales.API
             // Configure la lógica de validación de contraseñas
             manager.PasswordValidator = new PasswordValidator
             {
-                RequiredLength = 6,
-                RequireNonLetterOrDigit = true,
+                RequiredLength = 5,
+                RequireNonLetterOrDigit =true,
                 RequireDigit = true,
                 RequireLowercase = true,
                 RequireUppercase = true,

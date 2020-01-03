@@ -18,7 +18,7 @@ namespace Sales.Helpers
 
         private const string tokenType = "TokenType";
         private const string accessToken = "AccessToken";
-        private const string isRemembered = "IsRemembered";
+       // private const string isRemembered = "IsRemembered";//
         private static readonly string stringDefault = string.Empty;
         
 

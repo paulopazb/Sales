@@ -16,7 +16,8 @@
             
                 <Image
 
-                    Source="">
+                    Source="Sales_Logo"
+                    WidthRequest="160">
                 </Image>
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -57,14 +58,31 @@
                     IsRunning="{Binding IsRunning,Mode=TwoWay}"
                     VerticalOptions="CenterAndExpand">
                 </ActivityIndicator>
-                <Button
+                <StackLayout
+                    Margin="20,80"
+                    Orientation="Horizontal"
+                    VerticalOptions="CenterAndExpand">
+                    <Button
                         BackgroundColor="Navy"
-                    Command="{Binding LoginCommand}"
+                        BorderRadius="23"
+                        Command="{Binding LoginCommand}"
+                        HeightRequest="46"
+                        HorizontalOptions="FillAndExpand"
                         Text="Login"
-                    TextColor="White">
-                 </Button>
-               
-        </StackLayout>
+                        TextColor="White">
+                    </Button>
+
+                </StackLayout>
+                <StackLayout
+                   Margin="20,0">
+                    <Label
+                    Text="Developed by Paulo Paz and Diego Rivero"
+                    TextColor="Black">
+                    </Label> 
+                    
+                </StackLayout>
+
+            </StackLayout>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

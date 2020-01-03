@@ -22,7 +22,7 @@ namespace Sales.ViewModels
         {
             instance = this;
             this.Login = new LoginViewModel();
-        }
+        } 
         
         #region Singleton
         private static MainViewModel instance;

@@ -4,7 +4,7 @@
     using System.ComponentModel;
     using System.Runtime.CompilerServices;
 
-    public class BaseViewModel : INotifyPropertyChanged
+    public class BaseViewModel : INotifyPropertyChanged //actualiza la vista si el codigo y vise versa
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
